@@ -8,12 +8,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DataComponent } from './data/data.component';
+import { ScannComponent } from './scann/scann.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LogComponent,
-    DataComponent
+    DataComponent,
+    ScannComponent
   ],
   imports: [
     BrowserModule,

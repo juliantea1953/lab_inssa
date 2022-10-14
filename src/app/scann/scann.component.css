@@ -1,0 +1,55 @@
+
+body{
+    height: 100vh;
+    background-color:rgb(40, 45, 49);
+}
+
+.con_prin{
+    height: auto;
+    margin: 0%;
+    display: flex;
+    
+  
+}
+
+.cent{
+    width: 40%;
+    height: 100%;
+    margin: 5% 0 0 30%;
+  
+    
+}
+
+
+
+
+.form-floating{
+    width: 90%;
+    margin: 5% 5%;
+}
+
+
+h1{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin-left: 25%;
+    margin-bottom: 10%; 
+    color: aliceblue;
+}
+
+.but{
+    margin-left: 5%;
+    width: 90%;
+    color: rgb(26, 28, 29);
+
+}
+
+.form-control{
+    background-color: rgb(31, 35, 36);
+    color: aliceblue;
+}
+
+label{
+    color: aliceblue;
+}

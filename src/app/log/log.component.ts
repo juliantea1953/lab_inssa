@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { Route, Router } from '@angular/router';
+import { ScannComponent } from '../scann/scann.component';
 import { ServiceService } from '../service.service';
 import { Usuario } from './usuario';
 
@@ -14,7 +15,7 @@ export class LogComponent implements OnInit {
   usuario!: Usuario;
   formLogin! : FormGroup;
 
-  constructor(private router:Router, private service:ServiceService /*, private fb: FormGroup*/) { }
+  constructor(public router:Router, private service:ServiceService /*, private fb: FormGroup*/) { }
 
   ngOnInit(): void {
   }
@@ -33,6 +34,9 @@ export class LogComponent implements OnInit {
     //     console.log("Fallo servidor");
 
     // })
+
+    this.router.navigate(['scann']);
+    console.log("inicio")
     
 
   }
