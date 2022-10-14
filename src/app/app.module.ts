@@ -5,16 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LogComponent } from './log/log.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DataComponent } from './data/data.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LogComponent
+    LogComponent,
+    DataComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
